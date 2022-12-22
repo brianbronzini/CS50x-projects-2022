@@ -1,0 +1,8 @@
+-- The THIEF is: Bruce
+From observing the list of passangers, atm transactions, callers, and divers leaving the bakery, Bruce appears in all for lists. The thief must be Bruce.
+
+-- The city the thief ESCAPED TO: New York City
+The earliest flight was found to be flight #36, which departed from Fiftyville Airport at 8:20AM and arrived in LaGuardia Airport in New York City.
+
+-- The ACCOMPLICE is: Robin
+When we traced the caller that received a phone call from Bruce's number, we get Robin as the accomplice
