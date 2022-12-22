@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: When testing sort1 against sort3. sort1 consistently executed the task much more efficiently than sort3. This is because we know that bubble sort performs better when the numbers are already in order.
+
+sort2 uses: Merge Sort
+
+How do you know?: From our lecture discussion, we understand that merge sorts are more efficient than either bubble sort or selection sort by default. After testing a random.txt file with each sorting method. I found that sort2 executed the task significantly faster than sort1 and sort3.
+
+sort3 uses: Selection Sort
+
+How do you know?: When compared to sort1, sort3 essentially required twice as much time to execute the .txt files that have already been sorted. Given what we know about bubble sort and selection sort, it can be determined that sort3 uses a selection sort algorithm to make multiple passes through an already sorted list.
