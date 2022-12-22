@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            <!-- TODO: Add code to check answers to questions -->
+            document.addEventListener('DOMContentLoaded', function() {
+                let btnCorrect = document.querySelector("#correct");
+                let btnIncorrect = document.querySelectorAll(".incorrect");
+                let messageQ1 = document.querySelector("#responseQ1");
+                let messageQ2 = document.querySelector("#responseQ2");
+
+                // Question 1: Change button color to green for correct answer
+                btnCorrect.addEventListener('click', function() {
+                    btnCorrect.style.backgroundColor = "green";
+                    messageQ1.innerHTML = "Correct!";
+                });
+
+                // Question 1: Change button color to red for all incorrect answers
+                for (let i = 0; i < btnIncorrect.length; i++) // look through each incorrect button
+                {
+                    btnIncorrect[i].addEventListener('click', function() {
+                        btnIncorrect[i].style.backgroundColor = "red";
+                        messageQ1.innerHTML = "Incorrect";
+                    });
+                }
+
+                // Question 2: Give correct or incorrect response
+                document.querySelector("#submit").addEventListener('click', function () {
+                    let textInput = document.querySelector("input");
+                    if (textInput.value == "apple") // .value grabs user input
+                    {
+                        textInput.style.color = "green";
+                        messageQ2.innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        textInput.style.color = "red";
+                        messageQ2.innerHTML = "Incorrect";
+                    }
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which of the following is a song by the German heavy metal band “Scorpions”?</h3>
+
+                <button class="incorrect">Stairway to Heaven</button>
+                <button id="correct">Wind of Change</button>
+                <button class="incorrect">Don’t Stop Me Now</button>
+                <button class="incorrect">Hey Jude</button>
+
+                <p id="responseQ1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>What fruit is traditionally given to teachers?</h3>
+
+                <input type="text">
+                <button id="submit">Check Answer</button>
+
+                <p id="responseQ2"></p>
+            </div>
+        </div>
+    </body>
+</html>

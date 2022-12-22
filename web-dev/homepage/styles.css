@@ -1,0 +1,50 @@
+* {
+  text-align: center
+}
+
+#js-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 8px 16px;
+  margin: 1.5rem;
+  font-size: 20px;
+}
+
+#js-btn:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+}
+
+.active {
+  background-color: #e1efef;
+}
+
+body {
+  background-color: #3B3B3B;
+  color: #F9F6EE;
+}
+
+h1 {
+  font-size: 44px;
+  margin: 5rem 0;
+}
+
+p {
+  font-size: 24px;
+  color: yellow;
+}
+
+a {
+  padding: 8px;
+}
+
+a:hover,
+.navbar-toggler:hover {
+  background-color: #e1efef;
+  transition: all .2s ease-in-out;
+}
